@@ -109,7 +109,7 @@ form {
 }
 
 .form-input{
-    border: none;
+    border: 1px solid rgba(4, 196, 4, 0.3);
     height: 25px;
     border-radius: 10px;
     width: 200px;
@@ -118,7 +118,7 @@ form {
 }
 
 form select{
-    border: none;
+    border: 1px solid rgba(4, 196, 4, 0.3);
     height: 25px;
     border-radius: 2px;
     outline: none;
