@@ -1,0 +1,306 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#container{
+  width: 100%;
+  height: 100vh;
+}
+
+/* estilização do header começa aqui */
+
+#header{
+  margin-top: 5px;
+  box-shadow: 8px 0px 8px 0px #000;
+  width: 100%;
+}
+
+#nav{
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+
+#nav .logo a{
+  display: flex;
+  height: 130px;
+  margin-top: -15px;
+}
+
+#nav .dropdown{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 550px;
+  align-items: center;
+}
+
+#nav .button-dropdown{
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-dropdown .home-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-li{
+  background-color: #05ce84;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: min(2.5vw, 12px);
+  font-weight: 600;
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: rgb(36, 35, 35);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.button-dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.button-dropdown:hover .button-li{
+  background-color: #055707;
+  transition: 0.5s;
+}
+
+/* estilização da main começa aqui */
+
+#main{
+  display: flex;
+  flex-direction: column;
+}
+
+#main .section{
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+
+h4{
+    background-color: red;
+    cursor: pointer;
+}
+
+#main hr{
+  display: none;
+}
+
+.all-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-img{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.section-img img{
+  height: 550px;
+  width: 100%;
+  margin: 20px;
+}
+
+/* estilização da section content começa aqui */
+
+.section-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+}
+
+.section-content .image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 300px;
+}
+
+.image .span-title{
+  margin-bottom: 10px;
+}
+
+.image img{
+  height: 200px;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.section-content b{
+  text-transform: uppercase;
+}
+
+.section-content blockquote{
+  text-align: center;
+  width: 90%;
+}
+
+.section-content blockquote p{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.section-content .product-name{
+  text-transform: uppercase;
+}
+
+.section-content h4{
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* estilização do footer começa aqui */
+
+#footer{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 0px #000;
+}
+
+#footer .texto{
+  margin-bottom: 20px;
+  color: rgb(36, 35, 35);
+}
+
+#footer .icons-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#footer .icons{
+  display: flex;
+  
+}
+
+.icons img{
+  width: 90px;
+  height: 40px;
+}
+
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.icons a:hover{
+  color: rgb(5, 124, 45);
+  transition: 0.5s;
+}
+
+#myBtn{
+  text-transform: uppercase;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 1s ease-in-out;
+}
+
+#seta{
+  height: 30px;
+  width: 30px;
+  opacity: 0.6;
+  
+}
+
+#seta:hover{
+  opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width:767px) {
+  .dropdown{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 180px;
+  }
+
+  #main hr{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+.all-content{
+    display: flex;
+    flex-direction: column;
+}
+.section-img img{
+  max-width: 600px;
+  max-height: 300px;
+}
+.section-content{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.section-content .product-name{
+    margin-bottom: 15px;
+}
+.section-content blockquote{
+    margin-bottom: 15px;
+}
+
+  .button-li{
+      height: 22px;
+      width: 90px;
+  }
+}

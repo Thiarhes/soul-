@@ -1,0 +1,191 @@
+/******************Flexbox Main**********************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+#content {
+  display: flex;
+  background-image: url('../images/main.jpg');
+  background-size: 300vh;
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.txtQuemSomos {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.txtQuemSomos .title {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 400;
+  font-size: 40px;
+  color: #05ce84;
+  font-weight: 600;
+
+}
+
+.txtQuemSomos .prod-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 4vmin;
+
+}
+
+.txtQuemSomos .prod-content .card {
+  text-align: center;
+  border-radius: 6px;
+  padding: 40px 25px;
+}
+
+.txtQuemSomos .prod-content .card p {
+  margin: 30px;
+}
+
+.txtQuemSomos .prod-content .card:hover {
+  background: rgba(104, 207, 159, 0.6);
+  transition: 0.5s ease-in-out;
+}
+
+.txtQuemSomos .prod-content .card i {
+  color: #71e0ac;
+  transition: all 0.3s ease;
+}
+
+.txtQuemSomos .prod-content .card:hover i {
+  color: #fff;
+}
+.txtQuemSomos .prod-content .card .box {
+  transition: all 0.3s ease;
+}
+.txtQuemSomos .prod-content .card:hover .box {
+  transform: scale(1.05);
+}
+.txtQuemSomos .prod-content .card .text {
+  font-weight: 600;
+  margin: 10px 0 7px 0;
+  font-size: 5vmin;
+}
+
+
+
+/*header e nav*/
+
+#header {
+  margin-top: 5px;
+  box-shadow: 8px 0px 8px 0px #000;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+
+#nav .logo a {
+  display: flex;
+  height: 130px;
+  margin-top: -15px;
+}
+
+#nav .dropdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 550px;
+  align-items: center;
+}
+
+#nav .button-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-li {
+  background-color: #05ce84;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: min(2.5vw, 12px);
+  font-weight: 600;
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-dropdown:hover .button-li {
+  background-color: #055707;
+  transition: 0.5s;
+}
+
+/*footer*/
+
+#footer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 0px #000;
+  margin-top: 10px;
+}
+
+#footer .texto {
+  margin-bottom: 20px;
+  color: rgb(36, 35, 35);
+}
+
+#footer .icons-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#footer .icons {
+  display: flex;
+
+}
+
+.icons img {
+  width: 90px;
+  height: 40px;
+}
+
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: rgb(5, 124, 45);
+  transition: 0.5s;
+}
+
+@media screen and (max-width:767px) {
+  .dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+  }
+
+  .button-li {
+    height: 22px;
+    width: 100px;
+  }
+}
