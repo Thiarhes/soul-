@@ -127,7 +127,7 @@ h1 {
 	padding-top: 50px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #696969;
+	color: rgb(21, 247, 96);
 }
 
 .enderecos {
@@ -152,7 +152,8 @@ h1 {
 	text-transform: uppercase;
 	text-align: left;
 	font-family:Open Sans;
-	font-weight:400;
+	font-weight:600;
+  color: rgba(21, 247, 96, 0.7);
 	font-style: normal;
 	padding-top: 20px;
 	text-align: center;
@@ -161,6 +162,7 @@ h1 {
 p {
 	font-size: 16px;
 	text-decoration: none;
+  color: rgb(36, 35, 35);
 }
 
 

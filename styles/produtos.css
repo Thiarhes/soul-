@@ -105,6 +105,7 @@ html{
   display: flex;
   flex-direction: column; 
   width: 100%;
+  color: rgb(36, 35, 35);
 }
 
 h4{
